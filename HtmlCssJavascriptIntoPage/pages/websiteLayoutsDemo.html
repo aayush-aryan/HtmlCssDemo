@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <title>
+           Website Layout Sample
+       </title>
+       <style>
+         body{padding: 2em;}
+ 
+        .headerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 1opx;
+        }
+ 
+        .footerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 1opx;
+        }
+ 
+        .mainContainer{
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+            font-weight: bold;
+            
+        }
+      
+      .mainContentItem{
+          text-align: left;
+          background: deepskyblue;
+      }
+ 
+    article{
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+    }
+ 
+       .sideBarLeftItem{ background: gold;}
+       .sideBarRightItem{background: hotpink;}
+       .sideBarItem{ flex: 1 0 0; border:0px solid green;}
+       .mainContentItem{flex: 3 0px;}
+       .sideBarLeftItem{ order:1;}
+       .sideBarRightItem{ order:3;}
+       .mainContentItem{order:2;}
+       </style>
+   </head>
+   <body>
+       <header class="headerContainer"><marquee>
+         <h1>HEADER - SampleFlexboxExample</h1>
+        </marquee></header>
+       <div class="mainContainer">
+       <section class="mainContentItem">
+       <article>
+           <h2>
+               First article
+           </h2>
+           <p>BridgeLabz offers a live lab environment and works with tech companies by hiring fresh engineers and
+             transforming them into industry-ready developers.!</p>
+       </article>
+       <article>
+        <h2>
+            Second article
+        </h2>
+        <p>At a recent event in Bengaluru, IBM CEO Ginni Rometty made a statement that Indians don't have 
+            the skills required for employment in the IT industry. !</p>
+    </article>
+    <article>
+        <h2>
+            Third article
+        </h2>
+        <p>Mumbai-based serial entrepreneur Narayan Mahadevan (49) wanted to build a solution to this problem!</p>
+    </article>
+ 
+       </section>
+       <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+       <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+  
+    </div>
+       <footer class="footerContainer">Footer</footer>
+   </body>
+</html>
